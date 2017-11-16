@@ -57,7 +57,7 @@
                                             <tbody class=list >
                                             {% for sample in blast %}
                                             <tr>
-                                            <td><a href={{ url_for('sample_page', sample=sample.run) }}>{{sample.run}}</a></td>
+                                            <td><a href={{ url_for('sample_page', sample=sample.CG_ID_project) }}>{{sample.CG_ID_project}}</a></td>
                                             <td>{{sample.date_analysis }}</td>
                                             </tr>
                                             {% endfor %}
